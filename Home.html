@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna</title>
+    <link rel="stylesheet" href="styleHandball.css">
+    <script defer src=".\KvizHandball.js"></script>
+    </head>
+    <body>
+        <div class="container">
+                
+            <header>
+                <div class="topnav">
+                    <a href="#home" onclick="location.href='./home.html'">Home</a>
+                    <a href="#login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+                    <a class="active" href="#quiz">Quiz</a>
+                    <a href="#about" onclick="location.href='./about.html'">About</a>
+                    <p id="vrijeme"></p>
+                </div> 
+            </header>
+            <section>
+                <div id="results"></div>
+                <form name="quizForm" onsubmit="return submitAnswers()">
+                    <h3>1. U kojem gradu se odvija radnja filma Sceram?</h3>
+                    <input class="ans" type="radio" name="q1" value="a" id="q1a">Woodsborr</input>
+                    <input class="ans" type="radio" name="q1" value="b" id="q1b">Riverdale</input>
+                    <h3>2. Tko nije Marvel superjunak?</h3>
+                    <input class="ans" type="radio" name="q2" value="a" id="q2a">Spider-Man</input>
+                    <input class="ans" type="radio" name="q2" value="b" id="q2b">Iron man</input>
+                    <input class="ans" type="radio" name="q2" value="c" id="q2c">Doctor Strange</input>
+                    <input class="ans" type="radio" name="q2" value="d" id="q2d">Batman</input>
+
+                    <h3>3. U kojoj industriji posluje obitelj Gucci?</h3>
+                    <input class="ans" type="radio" name="q3" value="a" id="q3a"> Autoindustrija
+                    <input class="ans" type="radio" name="q3" value="b" id="q3b"> Vojna industrija
+                    <input class="ans" type="radio" name="q3" value="c" id="q3c"> Modna industrija
+
+                    <h3>4. Spider-Man je iz Los Angeles-a?</h3>
+                    <input class="ans" type="radio" name="q4" value="a" id="q4a"> Da
+                    <input class="ans" type="radio" name="q4" value="b" id="q4b"> Ne
+
+                    <h3>5. Fantastic Beasts: The Secrets of Dumbledore povezan je sa kojim filmom?</h3>
+                    <input class="ans" type="radio" name="q5" value="a" id="q5a"> Herry Poter
+                    <input class="ans" type="radio" name="q5" value="b" id="q5b"> Spider-Man
+                    <input class="ans" type="radio" name="q5" value="c" id="q5c"> Fast & furious
+
+                    <h3>6. Super Sonic je?</h3>
+                    <input class="ans" type="radio" name="q6" value="a" id="q6a"> Lav
+                    <input class="ans" type="radio" name="q6" value="b" id="q6b"> Zmaj
+                    <input class="ans" type="radio" name="q6" value="c" id="q6c"> Jež
+                    <input class="ans" type="radio" name="q6" value="d" id="q6d"> Majmun
+
+                    <h3>7. Izbaci uljeza!</h3>
+                    <input class="ans" type="radio" name="q7" value="a" id="q7a"> Real Madrid
+                    <input class="ans" type="radio" name="q7" value="b" id="q7b"> Memory
+                    <input class="ans" type="radio" name="q7" value="c" id="q7c"> TopGun
+                    <input class="ans" type="radio" name="q7" value="d" id="q7d"> Sceram 5
+
+                    <h3>8. Jeste li zadovoljni kvizom?</h3>
+                    <input class="ans" type="radio" name="q8" value="a" id="q8a"> a. Da<br>
+                    <br>
+                    <input class="ans" type="radio" name="q8" value="b" id="q8b"> b. Ne<br>
+                    <br><br>
+                    Unesite ime i prezime: <input class="uns" type="text" name="imeIprezime" id="imeIprezime">
+                    <br><br>
+                    <button class="submit" type="submit" value="submitAnswers">Submit Answers</button>
+                </form>
+            </section>
+    </body>
+</html>
+
